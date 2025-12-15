@@ -14,7 +14,7 @@ class RentalSource extends Model
         "email",
         "property_type",
         "city",
-        "disctrict",
+        "district",
         "is_qualified"
     ];
 }

@@ -15,9 +15,8 @@ class RentalSourceController extends Controller
         if ($city) {
             $query->where('city', $city);
         }
-
+        // dd( $query->get());
         $cities = RentalSource::select("city")->distinct()->pluck('city');
-
         return view("annonceListe", [
             "rentals" => $query->get(),
             'cities' => $cities,

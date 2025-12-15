@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('rentale_sources', function (Blueprint $table) {
+        Schema::create('rental_sources', function (Blueprint $table) {
             $table->id();
             $table->string('source_url')->unique();
             $table->string("source_type");
